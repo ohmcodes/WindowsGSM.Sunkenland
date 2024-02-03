@@ -34,7 +34,7 @@ namespace WindowsGSM.Sunkenland
         public override string AppId => "2667530"; /* taken via https://steamdb.info/app/2667530/info/ */
 
         // - Game server Fixed variables
-        public override string StartPath => "executable.exe"; // Game server start path
+        public override string StartPath => "Sunkenland-DedicatedServer.exe"; // Game server start path
         public string FullName = "Sunkenland Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
         public int PortIncrements = 0; // This tells WindowsGSM how many ports should skip after installation
@@ -43,9 +43,9 @@ namespace WindowsGSM.Sunkenland
         // - Game server default values
         public string ServerName = "WGSM Sunkenland";
         public string Defaultmap = ""; // Original (MapName)
-        public string Maxplayers = "10"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
-        public string Port = "27015"; // WGSM reads this as string but originally it is number or int
-        public string QueryPort = "27016"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
+        public string Maxplayers = "3"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
+        public string Port = "0000"; // WGSM reads this as string but originally it is number or int
+        public string QueryPort = "0000"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
         public string Additional = "-nographics -batchmode";
 
 
