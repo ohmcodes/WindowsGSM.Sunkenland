@@ -9,7 +9,7 @@ using WindowsGSM.GameServer.Engine;
 using WindowsGSM.GameServer.Query;
 using System.Collections.Generic;
 
-namespace WindowsGSM.Sunkenland
+namespace WindowsGSM.Plugins
 {
     public class Sunkenland : SteamCMDAgent
     {
@@ -42,15 +42,11 @@ namespace WindowsGSM.Sunkenland
 
         // - Game server default values
         public string ServerName = "WGSM Sunkenland";
-        public string Defaultmap = ""; // Original (MapName)
+        public string Defaultmap = "Your World Guid"; // Original (MapName)
         public string Maxplayers = "3"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
         public string Port = "0000"; // WGSM reads this as string but originally it is number or int
         public string QueryPort = "0000"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
-        public string Additional = "-nographics -batchmode";
-
-
-        private Dictionary<string, string> configData = new Dictionary<string, string>();
-
+        public string Additional = "-nographics -batchmode -password=\"yourpassword\" -region=\"Asia\" -makeSessionInvisible=false -logFile";
 
         // - Create a default cfg for the game server after installation
         public async void CreateServerCFG()
@@ -71,7 +67,9 @@ namespace WindowsGSM.Sunkenland
             string param = "";
 
             param += $" -maxPlayerCapacity={_serverData.ServerMaxPlayer} ";
+            param += $" -worldGuid \"{_serverData.ServerMap}\"";
             param += $" {_serverData.ServerParam}";
+
 
             // Prepare Process
             var p = new Process
