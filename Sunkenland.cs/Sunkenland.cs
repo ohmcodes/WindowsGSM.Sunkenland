@@ -46,7 +46,7 @@ namespace WindowsGSM.Plugins
         public string Maxplayers = "3"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
         public string Port = "0000"; // WGSM reads this as string but originally it is number or int
         public string QueryPort = "0000"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
-        public string Additional = "-nographics -batchmode -password=\"yourpassword\" -region=\"Asia\" -makeSessionInvisible=false -logFile";
+        public string Additional = "-nographics -batchmode -password \"yourPassword\" -region \"Asia\" -makeSessionInvisible false -logFile \"YourPathhere\"";
 
         // - Create a default cfg for the game server after installation
         public async void CreateServerCFG()
@@ -66,7 +66,7 @@ namespace WindowsGSM.Plugins
 
             string param = "";
 
-            param += $" -maxPlayerCapacity={_serverData.ServerMaxPlayer} ";
+            param += $" -maxPlayerCapacity {_serverData.ServerMaxPlayer} ";
             param += $" -worldGuid \"{_serverData.ServerMap}\"";
             param += $" {_serverData.ServerParam}";
 
