@@ -19,7 +19,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.Sunkenland", // WindowsGSM.XXXX
             author = "ohmcodes",
             description = "WindowsGSM plugin for supporting Sunkenland Dedicated Server",
-            version = "1.0",
+            version = "1.0.1",
             url = "https://github.com/ohmcodes/WindowsGSM.Sunkenland", // Github repository link (Best practice)
             color = "#1E8449" // Color Hex
         };
