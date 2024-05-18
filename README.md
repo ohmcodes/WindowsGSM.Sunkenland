@@ -18,6 +18,7 @@
 - The server can not create it's own world, and therefore there are a few steps to start using that. (**Check Creating a World** paragraph)
   - Go then to WindowsGSM, click on Edit Config and set the World ID to the **Server Start Map** field (you find the ID here in the Foldername (everything after ~: %AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds)
   - looks like that 98fb3e39-3d7f-4ec0-ad04-1a0a069ff810
+- The Ports can not be changed, as the sunkenland devs did not implement that yet
 - It seems, that currently Steam is needed to be installed on the same Machine, and also be run and logged in, as it makes a license check on startUp.
 - If you want to connect to your own server on the same PC:
   -   go to your steam Library, rightclick on sunkenland, browse local files and execute the Sunkenland.exe manually. you apparently can not run Sunkenland via steam while the dedicated server is running on the same machine
