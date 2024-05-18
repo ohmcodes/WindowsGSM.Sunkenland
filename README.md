@@ -23,7 +23,7 @@
 # Creating a World:
 1. Before running the dedicated server, ensure you have a valid, previously created
 world save file. You can generate one using the Sunkenland game client and
-then transfer it to your dedicated server machine. If you run the GameClient on the same machine, skipp to 4.
+then transfer it to your dedicated server machine. **If you run the GameClient on the same machine, skipp to 4.**
 2. For Windows users, locate your save files in the following directory (replace
 'Your_User_Name' with your system account name):(just enter this in a Explorer Window)
 %AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds
