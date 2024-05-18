@@ -44,8 +44,8 @@ namespace WindowsGSM.Plugins
         public string ServerName = "WGSM Sunkenland";
         public string Defaultmap = "Your World Guid"; // Original (MapName)
         public string Maxplayers = "3"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
-        public string Port = "0000"; // WGSM reads this as string but originally it is number or int
-        public string QueryPort = "0000"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
+        public string Port = "27015"; // Sunkenland uses this port, and it seems it is not changable
+        public string QueryPort = "27015"; // Sunkenland uses this port, and it seems it is not changable
         public string Additional = "-nographics -batchmode -password \"yourPassword\" -region \"Asia\" -makeSessionInvisible false -logFile \"YourPathhere\"";
 
         // - Create a default cfg for the game server after installation
