@@ -16,6 +16,7 @@
 
 # First Start Steps:
 - The server can not create it's own world, and therefore there are a few steps to start using that. (**Check Creating a World** paragraph)
+  - Go To WindowsGSM, click on Edit Config and add the World ID to the **Server Start Map** field (you find the here as Foldername: %AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds)
 - It seems, that currently Steam is needed to be installed on the same Machine, and also be run and logged in, as it makes a license check on startUp.
 - If you want to connect to your own server on the same PC:
   -   go to your steam Library, rightclick on sunkenland, browse local files and execute the Sunkenland.exe manually. you apparently can not run Sunkenland via steam while the dedicated server is running on the same machine
@@ -23,7 +24,7 @@
 # Creating a World:
 1. Before running the dedicated server, ensure you have a valid, previously created
 world save file. You can generate one using the Sunkenland game client and
-then transfer it to your dedicated server machine. **If you run the GameClient on the same machine, skipp to 4.**
+then transfer it to your dedicated server machine. **If you run the GameClient on the same machine, skipp the rest and add the guid to WindowsGSM**
 2. For Windows users, locate your save files in the following directory (replace
 'Your_User_Name' with your system account name):(just enter this in a Explorer Window)
 %AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds
@@ -34,7 +35,6 @@ dedicated server machine, you need to manually create all necessary folders to
 match the path mentioned above. (e.g. if you have never played Sunkenland on a
 Windows PC, you need to create “Vector3 Studio”, “Sunkenland” and “Worlds”
 folder by yourself.)
-4. Go To WindowsGSM, click on Edit Config and add the World ID to the Server Start Map field (you find the here as Foldername: %AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds)
 
 ### Official Documentation
 🗃️ https://www.sunkenlandgame.com/post/dedicated-server-user-manual
