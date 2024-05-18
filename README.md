@@ -21,6 +21,7 @@
 - It seems, that currently Steam is needed to be installed on the same Machine, and also be run and logged in, as it makes a license check on startUp.
 - If you want to connect to your own server on the same PC:
   -   go to your steam Library, rightclick on sunkenland, browse local files and execute the Sunkenland.exe manually. you apparently can not run Sunkenland via steam while the dedicated server is running on the same machine
+- For Further References look at the PDF provided in the Server Files 
 
 # Creating a World:
 1. Before running the dedicated server, ensure you have a valid, previously created
