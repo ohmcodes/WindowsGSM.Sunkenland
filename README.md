@@ -13,17 +13,28 @@
 3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
 5. Navigate "Servers" and Click "Install Game Server" and find "Sunkenland Dedicated Server [Sunkenland.cs]
-   
+
 # First Start Steps:
-- The server can not create it's own world, and therefore there are a few steps to start using that.
-  - open Browse => server files and open the PDF in there and follow the **Before First Time Running the Dedicated Server** section
-    - The world guid is then set via Edit Config => Server Start Map 
-  - or would recommend that howto: https://youtu.be/5HWE1wtBt7A 
-    - Steps that change the arguments in the bat file are done in Edit Config => Server Start Param
-    - The world guid is set via Edit Config => Server Start Map  
+- The server can not create it's own world, and therefore there are a few steps to start using that. (**Check Creating a World paragraph**)
 - It seems, that currently Steam is needed to be installed on the same Machine, and also be run and logged in, as it makes a license check on startUp.
 - If you want to connect to your own server on the same PC:
   -   go to your steam Library, rightclick on sunkenland, browse local files and execute the Sunkenland.exe manually. you apparently can not run Sunkenland via steam while the dedicated server is running on the same machine
+
+# Creating a World:
+1. Before running the dedicated server, ensure you have a valid, previously created
+world save file. You can generate one using the Sunkenland game client and
+then transfer it to your dedicated server machine. If you run the GameClient on the same machine, skipp to 4.
+2. For Windows users, locate your save files in the following directory (replace
+'Your_User_Name' with your system account name):(just enter this in a Explorer Window)
+%AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds
+Within the “Worlds” folder, you can find all the worlds you've created, if any.
+3. Copy the specific world you wish to host and paste it into the same directory on
+the dedicated server machine. Note: If you do not find any of these folders in the
+dedicated server machine, you need to manually create all necessary folders to
+match the path mentioned above. (e.g. if you have never played Sunkenland on a
+Windows PC, you need to create “Vector3 Studio”, “Sunkenland” and “Worlds”
+folder by yourself.)
+4. Go To WindowsGSM, click on Edit Config and add the World ID to the Server Start Map field (you find the here as Foldername: %AppData%\..\LocalLow\Vector3 Studio\Sunkenland\Worlds)
 
 ### Official Documentation
 🗃️ https://www.sunkenlandgame.com/post/dedicated-server-user-manual
